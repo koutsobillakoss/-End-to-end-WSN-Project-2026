@@ -404,8 +404,53 @@ max        34.500000             52.410000
 
 <img src="./images_github/Screenshot 2026-05-22 164738.png" alt=" ">
 
+# Οδηγίες εγκατάστασης 
 
-## Βιβλιογραφία
+Έστω ότι ο φάκελος End-to-end-WSN-Project-2026 με όλα τα απαραίτητα αρχεία είναι στον φάκελο:
+```bash
+C:\Users\drago\Downloads
+```
+,όπου είναι και ο φάκελος του virtual environment (venv), που χρησιμοποιείται για να τρέξει τα πρόγραμμα.
+
+## Προετοιμασία Περιβάλλοντος
+
+Απαραίτητη είναι η σύνδεση της βάσης MongoDB, είτε σε τερματικό, είτε σε γραφική διεπαφή (Compass).
+Επιπλέον, στο virtual environment πρέπει να είναι κατεβασμένες οι παρακάτω βιβλιοθήκες:
+```bash
+flask
+pymongo
+pandas
+numpy
+matplotlib
+scikit-learn
+statsmodels
+notebook
+```
+___________________________________________________________________________________________
+
+## Για να τρέξει το app.py που δημιουργεί το web based dashboard:
+Στον φάκελο Download -> cmd
+```bash
+venv\Scripts\activate
+cd C:\Users\drago\Downloads\End-to-end-WSN-Project-2026\End-to-end-WSN-Project-2026\web_app
+python app.py
+```
+___________________________________________________________________________________________
+
+## Για να τρέξει το wsn_analysis.ipynb, που πραγματοποιεί την πρόβλεψη τιμών:
+
+Στον φάκελο C:\Users\drago\Downloads\End-to-end-WSN-Project-2026\End-to-end-WSN-Project-2026 -> cmd
+```bash
+..\..\venv\Scripts\jupyter notebook
+```
+___________________________________________________________________________________________
+
+Επιπλέον, έχει αναπτυχθεί πρόγραμμα (imp.py) για την αποθήκευση ενός csv με δεδομένα των αισθητήρων, στην MongoDB, για την διασφάλιση της ομαλής λειτουργίας των αρχείων. Αυτό πραγματοποιήθηκε διότι η δειγματοληψία των δεδομένων έγινε σε σταθερό υπολογιστή και έπειτα τα δεδομένα του έγιναν export μέσω MongoDB και διαμοιράστηκαν και στα υπόλοιπα μέλη της ομάδας.
+
+# Βιβλιογραφία
+
+flask documentation https://flask.palletsprojects.com/en/stable/
+
 TELOSB datasheet by Instrumentation Devices Srl, Via Acquanera 29 - 22100 COMO (Italy), ph +39 031 525 391- fax +39 031 507 984, info@instrumentation.it - www.instrumentation.it
 https://www.instrumentation.it/gallery/5646/2010_11_24_12_19_43_telosb_datasheet_id_NEW.pdf
 
