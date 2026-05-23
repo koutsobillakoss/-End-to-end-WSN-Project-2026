@@ -329,14 +329,15 @@ hum_pct = -2.0468 + 0.0367 * raw_hum - 1.5955e-6 * raw_hum**2
 Οι τύποι αυτοί βρέθηκαν από τα datasheets του αισθητήρα TELOSB και του αισθητήρα θερμοκρασίας και υγρασίας Sensirion SHT11, για 3 Volt και 12 bit. 
 Έπειτα οι τιμές θα αποθηκευτούν στα πεδία της MongoDB, σε μορφή JSON, όπως παρακάτω: 
 ``` bash
-_id:6a0cbfcf9bbb6dd52dbd2b33:original_id("6a0c58c352ce762a7caf2aba")
-timestamp:2026-05-19T15:34:11.939+00:00
+_id:ObjectId('6a0cbfcf9bbb6dd52dbd0617')
+original_id:"69f8849440302e7b71c1b7de"
+timestamp:2026-05-04T14:35:48.071+00:00
 mote_id:1
-sample_num:4295
-temp_raw:722
-hum_raw:1200
-temperature_c:-32.38
-humidity_pct:39.7
+sample_num:57
+temp_raw:7309
+hum_raw:803
+temperature_c:33.49
+humidity_pct:26.39
 ```
 
 
