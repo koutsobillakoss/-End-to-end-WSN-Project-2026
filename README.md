@@ -3,7 +3,7 @@
 This guide explains how to set up Ubuntu 16.04 in VirtualBox, configure
 USB access for TelosB and Iris motes, and install TinyOS.
 
------------------------------------------------------------------------
+------------------------------------------------------------------------
 
 ## 1. Download and Install Required Software
 
